@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogChosenCar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".scenes.fragments.CarFragment">
+
+    <ImageView
+        android:id="@+id/orangeCar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_orange_car"
+        android:contentDescription="@string/car"
+        app:layout_constraintDimensionRatio="H, 1:2"
+        app:layout_constraintEnd_toStartOf="@id/purpleCar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/purpleCar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_purple_car"
+        android:contentDescription="@string/car"
+        app:layout_constraintDimensionRatio="H, 1:2"
+        app:layout_constraintEnd_toStartOf="@id/blueCar"
+        app:layout_constraintStart_toEndOf="@id/orangeCar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/blueCar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_blue_car"
+        android:contentDescription="@string/car"
+        app:layout_constraintDimensionRatio="H, 1:2"
+        app:layout_constraintEnd_toStartOf="@id/greenCar"
+        app:layout_constraintStart_toEndOf="@id/purpleCar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/greenCar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_green_car"
+        android:contentDescription="@string/car"
+        app:layout_constraintDimensionRatio="H, 1:2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/blueCar"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
