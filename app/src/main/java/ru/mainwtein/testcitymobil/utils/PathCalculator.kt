@@ -53,7 +53,7 @@ class PathCalculator : RouteCalculation {
                 val vectorDistance = PointF(speedVector.x, speedVector.y)
                 currentPosition += vectorDistance
             }
-
+ 
             if ((currentPosition - endPosition).length() < MIN_DISTANCE_DESTINATION) {
                 isMoving = false
             }
